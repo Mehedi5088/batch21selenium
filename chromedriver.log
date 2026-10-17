@@ -1,0 +1,96 @@
+[1791860533.403][INFO]: Starting ChromeDriver 151.0.7922.138 (41fa82442390a4d4456c78f2d69a832d5720cb27-refs/branch-heads/7922@{#2891}) on port 45651
+[1791860533.403][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1791860533.409][INFO]: ChromeDriver was started successfully on port 45651
+[1791860533.424][INFO]: [f91cd5280f3dbe9ee36631360b0f522c] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--user-data-dir=/tmp/selenium-normal-profile" ],
+            "binary": "/opt/google/chrome/chrome"
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1791860533.424][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1791860533.424][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1791860533.425][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1791860533.425][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1791860533.425][INFO]: Launching chrome: /opt/google/chrome/chrome --allow-pre-commit-input --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-features=IgnoreDuplicateNavs,Prewarm --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/selenium-normal-profile
+[1013/090213.454900:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /opt/google/chrome/CHROME_VERSION_EXTRA
+[103826:103826:1013/090213.519068:ERROR:ui/gtk/gtk_ui.cc:253] Schema org.gnome.desktop.interface does not have key font-antialiasing
+QSocketNotifier: Can only be used with threads started with QThread
+
+(chrome:103826): GLib-GIO-ERROR **: 09:02:13.566: Settings schema 'org.gnome.settings-daemon.plugins.xsettings' does not contain a key named 'antialiasing'
+[1013/090213.582280:ERROR:third_party/crashpad/crashpad/snapshot/elf/elf_dynamic_array_reader.h:64] tag not found
+[1013/090213.582904:ERROR:third_party/crashpad/crashpad/snapshot/elf/elf_dynamic_array_reader.h:64] tag not found
+[1013/090213.583055:ERROR:third_party/crashpad/crashpad/snapshot/elf/elf_dynamic_array_reader.h:64] tag not found
+[1013/090213.585738:ERROR:third_party/crashpad/crashpad/util/process/process_memory_range.cc:75] read out of range
+[1013/090213.590487:ERROR:third_party/crashpad/crashpad/util/process/process_memory_range.cc:75] read out of range
+[1013/090213.590525:ERROR:third_party/crashpad/crashpad/util/process/process_memory_range.cc:75] read out of range
+[1791860533.847][INFO]: [f91cd5280f3dbe9ee36631360b0f522c] RESPONSE InitSession ERROR session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.
+[1791860533.847][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1791860533.847][DEBUG]: Log type 'browser' lost 0 entries on destruction

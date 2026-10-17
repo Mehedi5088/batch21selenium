@@ -1,0 +1,17 @@
+{
+  "name": "batch21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+    "scripts": {
+    "test": "\"tests/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^4.51.0"
+  }
+
+}
