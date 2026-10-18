@@ -1,18 +1,10 @@
 import {Browser, Builder, By} from 'selenium-webdriver';
 import chrome from 'selenium-webdriver/chrome.js';
+import {Base} from './base.js';
 
-class signUpPage {
+class signUpPage extends Base {
     constructor() {
-        const options = new chrome.Options();
-        options.addArguments('--no-sandbox');
-        options.addArguments('--disable-dev-shm-usage');
-        options.addArguments('--ozone-platform=x11');
-        options.addArguments('--disable-gpu');
-        this.driver = new Builder()
-            .forBrowser(Browser.CHROME)
-            .setChromeOptions(options)
-            .build();
-
+        super();
         // this.regisrerLink = By.css(".ico-register");
         this.regisrerLink = By.xpath("//a[@href='/register']");
         this.genderMale = By.id("gender-male");
@@ -24,11 +16,6 @@ class signUpPage {
         this.registerButton = By.id("register-button");
         this.logOutButton = By.xpath("//a[@href='/logout']");
 
-    }
-    // browser open
-    async browserOpen(url) {
-        await this.driver.get(url);
-        await this.driver.manage().window().maximize();
     }
     // register button click
     async registerButtonClick() {
@@ -65,11 +52,6 @@ class signUpPage {
     // logout button click
     async logOutButtonClick() {
         await this.driver.findElement(this.logOutButton).click();
-    }
-    // browser close
-    async browserClose() {
-        console.log('Browser Close');
-        await this.driver.quit();
     }
 }
 

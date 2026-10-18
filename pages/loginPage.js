@@ -1,19 +1,10 @@
 import {Browser, Builder, By} from 'selenium-webdriver';
 import chrome from 'selenium-webdriver/chrome.js';
+import {Base} from './base.js';
 
-class loginPage {
+class loginPage extends Base {
     constructor() {
-        const options = new chrome.Options();
-        options.addArguments('--no-sandbox');
-        options.addArguments('--disable-dev-shm-usage');
-        options.addArguments('--ozone-platform=x11');
-        options.addArguments('--disable-gpu');
-        this.driver = new Builder()
-            .forBrowser(Browser.CHROME)
-            .setChromeOptions(options)
-            .build();
-
-
+        super();
         // login locators
         this.loginLink = By.xpath("//a[@href='/login']");
         this.loginEmail = By.id("Email");
@@ -42,12 +33,6 @@ class loginPage {
     async clickLoginButton() {
         await this.driver.findElement(this.loginButton).click();
     }
-    // browser close
-    async browserClose() {
-        console.log('Browser Close');
-        await this.driver.quit();
-    }
-
 }
 
 export {loginPage};
